@@ -19,7 +19,7 @@ document.getElementById("btn").onclick = function () {
     msg = "All fields should contain numeric values!";
   } else if (data1 < 0 || data2 < 0 || data3 < 0) {
     msg = "All fields should contain positive numeric values!";
-  } else if (data1 >= 40 && data2 >= 40 && data3 >= 40) {
+  } else if (data1 >= 40 || data2 >= 40 || data3 >= 40) {
     if (Percentage < 40) {
       grade = "Failed";
     } else if (Percentage < 50) {
